@@ -1,0 +1,16 @@
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.solke.openDoc">
+    <application>
+      <provider
+            android:name="com.solke.openDoc.FileProviderClass"
+          android:authorities="${applicationId}.docViewer_provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+    </application>
+</manifest>
+  
