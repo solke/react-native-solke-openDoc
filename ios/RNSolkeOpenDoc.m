@@ -38,7 +38,7 @@ RCT_EXPORT_METHOD(testModule:(NSString *)name location:(NSString *)location)
 RCT_EXPORT_METHOD(openDoc:(NSArray *)array callback:(RCTResponseSenderBlock)callback)
 {
     
-    __weak RNReactNativeDocViewer* weakSelf = self;
+    __weak RNSolkeOpenDoc* weakSelf = self;
     dispatch_queue_t asyncQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     dispatch_async(asyncQueue, ^{
         NSDictionary* dict = [array objectAtIndex:0];
@@ -102,7 +102,7 @@ RCT_EXPORT_METHOD(openDoc:(NSArray *)array callback:(RCTResponseSenderBlock)call
  */
 RCT_EXPORT_METHOD(openDocBinaryinUrl:(NSArray *)array callback:(RCTResponseSenderBlock)callback)
 {
-    __weak RNReactNativeDocViewer* weakSelf = self;
+    __weak RNSolkeOpenDoc* weakSelf = self;
     dispatch_queue_t asyncQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     dispatch_async(asyncQueue, ^{
         NSDictionary* dict = [array objectAtIndex:0];
@@ -155,7 +155,7 @@ RCT_EXPORT_METHOD(openDocBinaryinUrl:(NSArray *)array callback:(RCTResponseSende
 RCT_EXPORT_METHOD(openDocb64:(NSArray *)array callback:(RCTResponseSenderBlock)callback)
 {
     
-    __weak RNReactNativeDocViewer* weakSelf = self;
+    __weak RNSolkeOpenDoc* weakSelf = self;
     dispatch_queue_t asyncQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     dispatch_async(asyncQueue, ^{
         NSDictionary* dict = [array objectAtIndex:0];
@@ -199,7 +199,7 @@ RCT_EXPORT_METHOD(openDocb64:(NSArray *)array callback:(RCTResponseSenderBlock)c
 RCT_EXPORT_METHOD(openText:(NSArray *)array callback:(RCTResponseSenderBlock)callback)
 {
     
-    __weak RNReactNativeDocViewer* weakSelf = self;
+    __weak RNSolkeOpenDoc* weakSelf = self;
     dispatch_queue_t asyncQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     dispatch_async(asyncQueue, ^{
         NSDictionary* dict = [array objectAtIndex:0];

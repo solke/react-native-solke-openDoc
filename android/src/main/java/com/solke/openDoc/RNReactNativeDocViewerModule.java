@@ -50,7 +50,7 @@ public class RNReactNativeDocViewerModule extends ReactContextBaseJavaModule {
 
     @Override
     public String getName() {
-        return "RNDocViewer";
+        return "RNSolkeOpenDoc";
     }
 
     @ReactMethod
