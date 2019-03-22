@@ -1,6 +1,6 @@
 
 import { NativeModules } from 'react-native';
-const RNReactNativeDocViewer = NativeModules.RNReactNativeDocViewer;
+const RNReactNativeDocViewer = NativeModules.RNSolkeOpenDoc;
 export default {
   openDoc: RNReactNativeDocViewer.openDoc,
   openDocb64: RNReactNativeDocViewer.openDocb64,
